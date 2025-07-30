@@ -758,7 +758,7 @@
           })
           .catch(error => {
             console.error('Error loading manifest:', error);
-            fileListDiv.innerHTML = `<p style="color: red;">エラー: ${error.message}</p><p style="font-size: 0.8em;">リポジトリのルートに manifest.json を、<br>ichica-data/ フォルダに TSV ファイルを設置してください。</p>`;
+            fileListDiv.innerHTML = `<p style="color: red;">エラー: ${error.message}</p><p style="font-size: 0.8em;">リポジトリのルートに manifest.json を設置してください。<br>manifest.json にはTSVファイルへのパス (例: 'ichica-data/file.tsv') を記述します。</p>`;
           });
       }
 
@@ -767,17 +767,20 @@
         modal.style.display = 'none';
       }
 
-      async function loadFileFromRepo(filename) {
+      async function loadFileFromRepo(filepath) {
         try {
-          const response = await fetch(`ichica-data/${filename}`);
+          // 'filepath' from manifest.json is the full path from root, e.g., 'ichica-data/file.tsv'
+          const response = await fetch(filepath);
           if (!response.ok) {
-            throw new Error(`ファイル'ichica-data/${filename}'を読み込めませんでした。`);
+            throw new Error(`ファイル'${filepath}'を読み込めませんでした。`);
           }
           const text = await response.text();
           const words = parseTsv(text);
           if (words.length > 0) {
+            // Use only the filename part for the list name, not the whole path
+            const displayName = filepath.split('/').pop();
             const defaultMapping = { front: 5, back: 6, image: 7, no1: 0, no2: 0, no3: 0 };
-            dynamicLists.push({ id: Date.now(), name: filename, words, columnMapping: defaultMapping });
+            dynamicLists.push({ id: Date.now(), name: displayName, words, columnMapping: defaultMapping });
             saveState();
             closeRepoModal();
             showHomePage();
