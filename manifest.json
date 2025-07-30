@@ -1,0 +1,17 @@
+{
+  "files": [
+    "ichica-data/rika_bio_hyo.tsv",
+    "ichica-data/rika_bio_zukai.tsv",
+    "ichica-data/rika_chem_hyo.tsv",
+    "ichica-data/rika_chem_zukai.tsv",
+    "ichica-data/rika_geol_hyo.tsv",
+    "ichica-data/rika_geol_zukai.tsv",
+    "ichica-data/rika_phys_hyo.tsv",
+    "ichica-data/rika_phys_zukai.tsv",
+    "ichica-data/shakai_civics_all.tsv",
+    "ichica-data/shakai_history_all.tsv",
+    "ichica-data/shakai_japan_geo.tsv",
+    "ichica-data/shakai_japan_geo.tsv",
+    "ichica-data/shakai_world_geo.tsv" 
+  ]
+}

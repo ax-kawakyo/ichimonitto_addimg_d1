@@ -1,0 +1,27 @@
+id	subject	grade	unit	question	answer	image_id
+ri-chem-z-001	rika	1	化学図解	図1について、酸素を集める方法として適しているのは、( )法である。	水上置換	rika_g1_chem_zukai
+ri-chem-z-002	rika	1	化学図解	図1について,アンモニアを集める方法として適しているのは、( )法である。	上方置換	rika_g1_chem_zukai
+ri-chem-z-003	rika	1	化学図解	図1について、二酸化炭素は水上置換法でも( )法でも集めることができる。	下方置換	rika_g1_chem_zukai
+ri-chem-z-004	rika	1	化学図解	図2について、40℃の水100gに最も多くとける物質は( )である。	ミョウバン	rika_g1_chem_zukai
+ri-chem-z-005	rika	1	化学図解	図2について,60℃の水100gに20gをとかしたとき、一部がとけ残る物質は( )である。	ホウ酸	rika_g1_chem_zukai
+ri-chem-z-006	rika	1	化学図解	図3について、物質が、固体(氷),液体(水),気体(水蒸気)と温度によってすがたを変えることを( )という。	状態変化	rika_g1_chem_zukai
+ri-chem-z-007	rika	1	化学図解	図3について、氷がとけ始めるときの温度を( )という。	融点	rika_g1_chem_zukai
+ri-chem-z-008	rika	1	化学図解	図3において、氷がとけ始めてからとけ終わるまでの間、ビーカー内の水は固体と( )が混ざった状態である。	液体	rika_g1_chem_zukai
+ri-chem-z-009	rika	2	化学図解	図1のように水の電気分解を行ったとき、陰極から発生する気体は水素,陽極から発生する気体は( )である。	酸素	rika_g2_chem_zukai
+ri-chem-z-010	rika	2	化学図解	図1において、( )極側に集まる気体の体積はもう一方の極側に集まる気体の体積の約2倍である。	陰	rika_g2_chem_zukai
+ri-chem-z-011	rika	2	化学図解	図2について、加熱後にできる物質は( )である。	硫化鉄	rika_g2_chem_zukai
+ri-chem-z-012	rika	2	化学図解	図2について、加熱後にできた物質のように、2種類以上の物質が結びついてできた物質を( )という。	化合物	rika_g2_chem_zukai
+ri-chem-z-013	rika	2	化学図解	図2について、加熱後の物質に塩酸を加えたとき、発生する気体は( )である。	硫化水素	rika_g2_chem_zukai
+ri-chem-z-014	rika	2	化学図解	図3の装置で酸化銅と炭素の混合物を加熱したときに酸化銅に起こったような、酸化物から酸素がうばわれる反応を( )という。	還元	rika_g2_chem_zukai
+ri-chem-z-015	rika	2	化学図解	図3の装置で過不足なく反応させた後、試験管A内に残った物質は( )である。	銅	rika_g2_chem_zukai
+ri-chem-z-016	rika	2	化学図解	図4の装置で銅の粉末を加熱したときに銅に起こったような、物質が酸素と結びつく反応を( )という。	酸化	rika_g2_chem_zukai
+ri-chem-z-017	rika	2	化学図解	図4の装置で銅の粉末を加熱したとき,銅と酸素が結びついてできる物質を( )という。	酸化銅	rika_g2_chem_zukai
+ri-chem-z-018	rika	3	化学図解	図1のように、原子が電子を放出して電気を帯びたものを陽イオン、原子が電子を受けとって電気を帯びたものを( )という。	陰イオン	rika_g3_chem_zukai
+ri-chem-z-019	rika	3	化学図解	図2のように、塩化銅水溶液を電気分解したとき、気体が発生するのは( )極側である。	陽	rika_g3_chem_zukai
+ri-chem-z-020	rika	3	化学図解	図2のように、塩化銅水溶液を電気分解したときに、一方の極で発生する気体は( )である。	塩素	rika_g3_chem_zukai
+ri-chem-z-021	rika	3	化学図解	図3のように、亜鉛板を入れた硫酸亜鉛水溶液と,銅板を入れた硫酸銅水溶液を使ってつくった電池を( )という。	ダニエル電池	rika_g3_chem_zukai
+ri-chem-z-022	rika	3	化学図解	図3の亜鉛板と銅板では、イオンになりやすい( )板のほうが-極になる。	亜鉛	rika_g3_chem_zukai
+ri-chem-z-023	rika	3	化学図解	図3の電池は、やがてモーターの回転が止まる。このように、一度使いきると再び使えなくなる電池を( )という。	一次電池	rika_g3_chem_zukai
+ri-chem-z-024	rika	3	化学図解	図4のように、酸性の水溶液とアルカリ性の水溶液がたがいの性質を打ち消し合う反応を( )という。	中和	rika_g3_chem_zukai
+ri-chem-z-025	rika	3	化学図解	図4では、水素イオンと( )が結びついて、水が生じる。	水酸化物イオン	rika_g3_chem_zukai
+ri-chem-z-026	rika	3	化学図解	図4において、塩酸中の( )と水酸化ナトリウム水溶液中のナトリウムイオンが結びつき、塩化ナトリウムという塩ができる。	塩化物イオン	rika_g3_chem_zukai

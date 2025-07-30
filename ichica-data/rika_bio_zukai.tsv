@@ -1,0 +1,27 @@
+id	subject	grade	unit	question	answer	image_id
+ri-bio-z-001	rika	1	生物図解	図1の双眼実体顕微鏡では、右目でのぞきながら微動ねじで調整したあと、左目でのぞきながら( )を回してピントを合わせる。	視度調節リング	rika_g1_bio_zukai
+ri-bio-z-002	rika	1	生物図解	図1について、接眼レンズに「15×」、対物レンズに「10」と書かれていたとき、顕微鏡の倍率は( )倍である。	150	rika_g1_bio_zukai
+ri-bio-z-003	rika	1	生物図解	図2について、おしべのやくの中には( )がつまっている。	花粉	rika_g1_bio_zukai
+ri-bio-z-004	rika	1	生物図解	図2のような花のうち、花弁が1枚1枚離れている花のなかまを( )という。	離弁花	rika_g1_bio_zukai
+ri-bio-z-005	rika	1	生物図解	図3のような、胚珠が子房の中にある植物のなかまを( )という。	被子植物	rika_g1_bio_zukai
+ri-bio-z-006	rika	1	生物図解	図3のなかまに対し、胚珠がむき出しになっている植物のなかまを( )という。	裸子植物	rika_g1_bio_zukai
+ri-bio-z-007	rika	1	生物図解	図4の動物のなかまのように、( )のある動物を脊椎動物という。	背骨 (せきつい)	rika_g1_bio_zukai
+ri-bio-z-008	rika	1	生物図解	図4について、卵生の動物のなかまのうち、殻のある卵を陸上にうむのは、は虫類と( )である。	鳥類	rika_g1_bio_zukai
+ri-bio-z-009	rika	2	生物図解	図1について、気孔から水が水蒸気となって出ていく現象を( )という。	蒸散	rika_g2_bio_zukai
+ri-bio-z-010	rika	2	生物図解	図1の孔辺細胞の中に見られる緑色の粒は( )である。	葉緑体	rika_g2_bio_zukai
+ri-bio-z-011	rika	2	生物図解	図2について、タンパク質の分解の過程ではたらく消化酵素をふくむ消化液をつくるのは、胃と( )と小腸である。	すい臓	rika_g2_bio_zukai
+ri-bio-z-012	rika	2	生物図解	図2について、だ液にふくまれていて、デンプンを分解する消化酵素を( )という。	アミラーゼ	rika_g2_bio_zukai
+ri-bio-z-013	rika	2	生物図解	図3について、ブドウ糖やアミノ酸は柔毛の( )に入って、肝臓まで運ばれる。	毛細血管	rika_g2_bio_zukai
+ri-bio-z-014	rika	2	生物図解	図4について、動脈血と静脈血のうち、あざやかな赤色をしているのは( )である。	動脈血	rika_g2_bio_zukai
+ri-bio-z-015	rika	2	生物図解	図4について、心臓にもどってくる血液が流れている血管を( )という。	静脈	rika_g2_bio_zukai
+ri-bio-z-016	rika	2	生物図解	図5について、目のように外界の刺激を受けとる器官を( )という。	感覚器官	rika_g2_bio_zukai
+ri-bio-z-017	rika	2	生物図解	図5について、光の刺激を受けとる細胞がある部分は( )である。	網膜	rika_g2_bio_zukai
+ri-bio-z-018	rika	3	生物図解	図1について、1つの細胞が分かれて2つの細胞になることを( )という。	細胞分裂	rika_g3_bio_zukai
+ri-bio-z-019	rika	3	生物図解	図1について、細胞分裂中の細胞の中に見えるひものようなものを( )という。	染色体	rika_g3_bio_zukai
+ri-bio-z-020	rika	3	生物図解	図2について、受精卵が体細胞分裂をくり返して植物の体が完成していくことを、植物の( )という。	発生	rika_g3_bio_zukai
+ri-bio-z-021	rika	3	生物図解	図2について,精細胞や卵細胞などの生殖を行うための特別な細胞を( )という。	生殖細胞	rika_g3_bio_zukai
+ri-bio-z-022	rika	3	生物図解	図2について、動物では( )と卵によって受精が行われる。	精子	rika_g3_bio_zukai
+ri-bio-z-023	rika	3	生物図解	図2のような、2種類の生殖細胞によるふえ方を( )という。	有性生殖	rika_g3_bio_zukai
+ri-bio-z-024	rika	3	生物図解	図3のような、生物どうしの「食べる・食べられる」という関係のつながりを( )という。	食物連鎖	rika_g3_bio_zukai
+ri-bio-z-025	rika	3	生物図解	図3について、植物,草食動物,肉食動物のうち、最も数量が少ないのは( )である。	肉食動物	rika_g3_bio_zukai
+ri-bio-z-026	rika	3	生物図解	図3について、植物は光合成によって( )をつくり出しているため、生産者とよばれる。	有機物	rika_g3_bio_zukai

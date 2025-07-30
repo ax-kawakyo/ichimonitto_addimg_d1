@@ -1,0 +1,27 @@
+id	subject	grade	unit	question	answer	image_id
+ri-geol-z-001	rika	1	地学図解	図1について、マグマが地中深くでゆっくり冷えて固まってできた岩石を( )という。	深成岩	rika_g1_geol_zukai
+ri-geol-z-002	rika	1	地学図解	図1について、火山岩には流紋岩、安山岩、( )などがあり、流紋岩がいちばん白っぽい。	玄武岩	rika_g1_geol_zukai
+ri-geol-z-003	rika	1	地学図解	図2について、初期微動は伝わる速さの速い( )による地面のゆれである。	P波	rika_g1_geol_zukai
+ri-geol-z-004	rika	1	地学図解	図2について、震源からの距離が遠いほど、初期微動継続時間は( )なる。	長く	rika_g1_geol_zukai
+ri-geol-z-005	rika	1	地学図解	図3について、泥岩や砂岩のように堆積物が押し固められてできた岩石を( )という。	堆積岩	rika_g1_geol_zukai
+ri-geol-z-006	rika	1	地学図解	図3について、炭酸カルシウムを成分にもち、生物の死がいなどが固まってできた岩石を( )という。	石灰岩	rika_g1_geol_zukai
+ri-geol-z-007	rika	1	地学図解	図4のように、堆積した年代を知るための手がかりとなる化石を( )という。	示準化石	rika_g1_geol_zukai
+ri-geol-z-008	rika	1	地学図解	図4のような、生物の移り変わりをもとに決められた年代のことを( )という。	地質年代	rika_g1_geol_zukai
+ri-geol-z-009	rika	2	地学図解	図1について、圧力が最も大きくなるのは,A, B, Cの面のうち、( )の面を下にしたときである。	C	rika_g2_geol_zukai
+ri-geol-z-010	rika	2	地学図解	図2の記号が表しているのは、天気、風力、( )である。	風向	rika_g2_geol_zukai
+ri-geol-z-011	rika	2	地学図解	図2の記号が表す天気は( )である。	くもり	rika_g2_geol_zukai
+ri-geol-z-012	rika	2	地学図解	図3について、乾球の示度が12℃,湿球の示度が9℃であるとき、湿度は( )%である。	65	rika_g2_geol_zukai
+ri-geol-z-013	rika	2	地学図解	図4について,温暖前線の通過後は、気温が( )。	上がる	rika_g2_geol_zukai
+ri-geol-z-014	rika	2	地学図解	図4について、寒冷前線付近では、強い雨が( )範囲に降っている。	せまい	rika_g2_geol_zukai
+ri-geol-z-015	rika	2	地学図解	図4について,寒冷前線が温暖前線に追いついてできる前線を( )という。	閉そく前線	rika_g2_geol_zukai
+ri-geol-z-016	rika	2	地学図解	図5について、シベリア気団が発達している季節に特徴的な気圧配置を、( )の気圧配置という。	西高東低	rika_g2_geol_zukai
+ri-geol-z-017	rika	2	地学図解	図5について、日本の夏を特徴づける南東の風、冬を特徴づける北西の風を、いっぱんに( )という。	季節風	rika_g2_geol_zukai
+ri-geol-z-018	rika	3	地学図解	図1のような星の年周運動が起こるのは、地球が( )しているためである。	公転	rika_g3_geol_zukai
+ri-geol-z-019	rika	3	地学図解	図1で、3月15日にオリオン座が南中する時刻は( )である。	午後4時	rika_g3_geol_zukai
+ri-geol-z-020	rika	3	地学図解	図2について、日本において南中高度が1年間で最も高くなるのは、( )の日である。	夏至	rika_g3_geol_zukai
+ri-geol-z-021	rika	3	地学図解	図2について、日本において冬至の日の日の出の位置は、1年間で最も( )寄りになる。	南	rika_g3_geol_zukai
+ri-geol-z-022	rika	3	地学図解	図3について、真夜中に南の空に見える月は( )である。	上弦の月と下弦の月	rika_g3_geol_zukai
+ri-geol-z-023	rika	3	地学図解	図3について,月が地球の影に入り,月の一部または全部が欠けて見える現象を( )という。	月食	rika_g3_geol_zukai
+ri-geol-z-024	rika	3	地学図解	図3の月のように、惑星のまわりを公転している天体を( )という。	衛星	rika_g3_geol_zukai
+ri-geol-z-025	rika	3	地学図解	図4について、金星のように、地球より内側を公転している惑星を( )という。	内惑星	rika_g3_geol_zukai
+ri-geol-z-026	rika	3	地学図解	図4のように、地球の内側を公転している惑星は、真夜中に見ることが( )。	できない	rika_g3_geol_zukai

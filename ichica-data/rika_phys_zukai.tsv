@@ -1,0 +1,27 @@
+id	subject	grade	unit	question	answer	image_id
+ri-phys-z-001	rika	1	物理図解	図1について、凸レンズの中心から焦点までの距離を( )という。	焦点距離	rika_g1_phys_zukai
+ri-phys-z-002	rika	1	物理図解	図1について、凸レンズを通った光が集まってできる像のことを( )という。	実像	rika_g1_phys_zukai
+ri-phys-z-003	rika	1	物理図解	図2について、振幅が大きくなるほど、音の大きさは( )なる。	大きく	rika_g1_phys_zukai
+ri-phys-z-004	rika	1	物理図解	図2について、音が1秒間に振動する回数を( )という。	振動数	rika_g1_phys_zukai
+ri-phys-z-005	rika	1	物理図解	図3について、上皿てんびんではかる物質そのものの量を( )という。	質量	rika_g1_phys_zukai
+ri-phys-z-006	rika	1	物理図解	図3について、月面上では、物体Aは( )gの分銅とつり合う。	150	rika_g1_phys_zukai
+ri-phys-z-007	rika	1	物理図解	図3について、地球上で物体Aにはたらく重力の大きさを測定したときの値は( )Nである。	1.5	rika_g1_phys_zukai
+ri-phys-z-008	rika	1	物理図解	図4について、物体には重力がはたらいているが、この重力と,机から物体にはたらく( )がつり合っている。	垂直抗力	rika_g1_phys_zukai
+ri-phys-z-009	rika	2	物理図解	図1のように豆電球A,Bをつないだとき、この回路を( )という。	直列回路	rika_g2_phys_zukai
+ri-phys-z-010	rika	2	物理図解	図1について、豆電球Aを流れる電流の大きさは( )Aである。	0.15	rika_g2_phys_zukai
+ri-phys-z-011	rika	2	物理図解	図2のように豆電球A,Bをつないだとき、この回路を( )という。	並列回路	rika_g2_phys_zukai
+ri-phys-z-012	rika	2	物理図解	図2について、点Pを流れる電流の大きさは( )Aである。	0.2	rika_g2_phys_zukai
+ri-phys-z-013	rika	2	物理図解	図3について、抵抗器aと抵抗器bでは( )のほうが電流を通しにくい。	抵抗器a	rika_g2_phys_zukai
+ri-phys-z-014	rika	2	物理図解	図3について、抵抗器bに4Vの電圧を加えると、( )Aの電流が流れる。	0.1	rika_g2_phys_zukai
+ri-phys-z-015	rika	2	物理図解	図4について、コイルを電流の向きに沿って右手でにぎったとき、( )指の向きが、コイルの中の磁界の向きである。	親	rika_g2_phys_zukai
+ri-phys-z-016	rika	2	物理図解	図5について、棒磁石をコイルに出し入れしたときにコイルに流れる電流を( )という。	誘導電流	rika_g2_phys_zukai
+ri-phys-z-017	rika	2	物理図解	図5について、コイル内部の磁界が変化することでコイルに電流が流れる現象を( )という。	電磁誘導	rika_g2_phys_zukai
+ri-phys-z-018	rika	3	物理図解	図1について,水圧の大きさは、深くなるほど( )なるため、物体の下面と上面で受ける水圧の差によって、浮力が生じる。	大きく	rika_g3_phys_zukai
+ri-phys-z-019	rika	3	物理図解	図1について, A, B, Cのばねばかりが示す値の大小関係を,<,>で表すと( )となる。	A>B>C	rika_g3_phys_zukai
+ri-phys-z-020	rika	3	物理図解	図2について、aのグラフにおける速さのふえ方よりbのグラフにおける速さのふえ方のほうが( )。	大きい	rika_g3_phys_zukai
+ri-phys-z-021	rika	3	物理図解	図2について、グラフが横軸に平行であった場合、物体は( )運動をしているといえる。	等速直線	rika_g3_phys_zukai
+ri-phys-z-022	rika	3	物理図解	図3について、物体に力を加えても物体をはじめの位置から動かせなかったとき、物体に対して仕事をしたと( )。	いわない	rika_g3_phys_zai
+ri-phys-z-023	rika	3	物理図解	図3について,5Nの力で物体を3m持ち上げたとき、物体にした仕事は( )Jである。	15	rika_g3_phys_zukai
+ri-phys-z-024	rika	3	物理図解	図3のように物体を直接持ち上げても、道具を使って持ち上げても、仕事の大きさは変わらない。これを( )という。	仕事の原理	rika_g3_phys_zukai
+ri-phys-z-025	rika	3	物理図解	図4について,位置エネルギーと運動エネルギーの和を( )という。	力学的エネルギー	rika_g3_phys_zukai
+ri-phys-z-026	rika	3	物理図解	図4で、空気抵抗などを無視してよいとき、おもりにはたらく力は、糸がおもりを引く力と( )の2つである。	重力	rika_g3_phys_zukai
