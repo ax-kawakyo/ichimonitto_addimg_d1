@@ -749,7 +749,7 @@
             ul.className = 'repo-file-list';
             data.files.forEach(filename => {
               const li = document.createElement('li');
-              li.textContent = filename;
+              li.textContent = filename.split('/').pop();
               li.onclick = () => loadFileFromRepo(filename);
               ul.appendChild(li);
             });
@@ -769,11 +769,8 @@
 
       async function loadFileFromRepo(pathFromFile) {
         try {
-          // manifest.jsonに書かれたパス(例: 'ichica-data/file.tsv')を、そのまま直接使います。
-          // これにより、パスが二重に追加される問題を防ぎます。
           const response = await fetch(pathFromFile);
           if (!response.ok) {
-            // HTTPステータスが404などの場合にエラーを投げる
             throw new Error(`ファイル'${pathFromFile}'が見つかりませんでした。サーバー上のパスとファイル名を確認してください。`);
           }
           const text = await response.text();
@@ -1123,6 +1120,10 @@
           if(imageModal) {
               imageModal.onclick = () => {
                   imageModal.style.display = 'none';
+                  const cardContainer = document.getElementById('cardContainer');
+                  if (cardContainer) {
+                      cardContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                  }
               };
           }
 
