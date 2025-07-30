@@ -747,12 +747,10 @@
             }
             const ul = document.createElement('ul');
             ul.className = 'repo-file-list';
-            data.files.forEach(filepath => {
+            data.files.forEach(filename => {
               const li = document.createElement('li');
-              // パス全体ではなく、ファイル名のみを表示して見た目をすっきりさせます
-              const displayName = filepath.split('/').pop();
-              li.textContent = displayName;
-              li.onclick = () => loadFileFromRepo(filepath); // クリック時には完全なパスを渡します
+              li.textContent = filename;
+              li.onclick = () => loadFileFromRepo(filename);
               ul.appendChild(li);
             });
             fileListDiv.innerHTML = '';
