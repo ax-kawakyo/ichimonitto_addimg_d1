@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>カスタム表裏カード</title>
+    <title>図表対応カード_V0</title>
     <style>
       body {
           background: #f3f4f6;
@@ -13,13 +13,14 @@
       }
 
       .container {
-          width: 100%;
-          max-width: 420px;
+          width: 95%;
+          max-width: 1000px;
           margin: 2rem auto;
           background: #fff;
           border-radius: 16px;
           box-shadow: 0 4px 16px rgba(0,0,0,0.08);
           padding: 2rem 1rem 2rem 1rem;
+          box-sizing: border-box;
       }
 
       .title {
@@ -172,8 +173,7 @@
       .image-area {
           position: relative;
           width: 100%;
-          max-width: 400px;
-          height: 160px;
+          height: 450px;
           margin: 0 auto 1rem auto;
           display: flex;
           justify-content: center;
@@ -203,17 +203,16 @@
       }
       
       .card-number {
-          text-align: left;
-          font-size: 1rem;
+          text-align: center;
+          font-size: 1.1rem;
           color: #6b7280;
           margin-bottom: 0.5rem;
-          padding-left: 0.5rem;
+          margin-top: 1rem;
           height: 1.2rem; /* Ensure layout doesn't shift if number is empty */
       }
 
       .card-container {
           width: 100%;
-          max-width: 400px;
           height: 250px;
           perspective: 1000px;
           cursor: pointer;
@@ -238,33 +237,37 @@
           height: 100%;
           backface-visibility: hidden;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: flex-start; /* Changed */
+          align-items: flex-start;    /* Changed */
           border-radius: 15px;
           box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-          padding: 1rem;
-          text-align: center;
+          padding: 1.5rem; /* Increased padding */
+          text-align: left; /* Changed */
           word-break: break-word;
-          box-sizing: border-box; /* This ensures padding is inside the element's width/height */
+          box-sizing: border-box;
       }
 
       .card-front {
           background: #fefce8; /* 薄い黄色 */
           color: #111827;      /* 黒字 */
-          font-size: 2.5rem;
+          font-size: 1.6rem;   /* Changed */
           font-weight: bold;
       }
 
       .card-back {
           background: #f0f9ff; /* 薄い水色 */
           color: #111827;      /* 黒字 */
-          font-size: 2.0rem;
+          font-size: 1.4rem;   /* Changed */
           font-weight: 600;
           transform: rotateY(180deg);
       }
 
+      .red-parentheses {
+          color: #ef4444;
+      }
+
       .done-card .card-front {
-          font-size: 2rem;
+          font-size: 3rem;
           color: #15803d; /* 完了テキストを緑色に */
       }
 
@@ -597,7 +600,7 @@
       function showHomePage() {
         app.innerHTML = `
           <div class="container">
-            <h1 class="title">カスタム表裏カード_v0</h1>
+            <h1 class="title">図表対応カード_V0</h1>
             <div id="lists"></div>
             <div class="mt-8 text-center">
               <button id="selectFromRepoBtn" class="add-btn" style="margin-bottom: 1rem;">リスト選択</button>
@@ -749,7 +752,7 @@
             ul.className = 'repo-file-list';
             data.files.forEach(filename => {
               const li = document.createElement('li');
-              li.textContent = filename.split('/').pop();
+              li.textContent = filename;
               li.onclick = () => loadFileFromRepo(filename);
               ul.appendChild(li);
             });
@@ -769,8 +772,11 @@
 
       async function loadFileFromRepo(pathFromFile) {
         try {
+          // manifest.jsonに書かれたパス(例: 'ichica-data/file.tsv')を、そのまま直接使います。
+          // これにより、パスが二重に追加される問題を防ぎます。
           const response = await fetch(pathFromFile);
           if (!response.ok) {
+            // HTTPステータスが404などの場合にエラーを投げる
             throw new Error(`ファイル'${pathFromFile}'が見つかりませんでした。サーバー上のパスとファイル名を確認してください。`);
           }
           const text = await response.text();
@@ -919,6 +925,12 @@
         return parts.length > 0 ? parts.join('-') : '';
       }
 
+      function highlightParentheses(text) {
+          if (!text) return '';
+          // 全角のかっこ（）を<span class="red-parentheses">で囲む
+          return text.replace(/([（）])/g, '<span class="red-parentheses">$1</span>');
+      }
+
       function showFlashcardPage(resumeState = null) {
         if (!currentList) {
           showHomePage();
@@ -986,7 +998,7 @@
                 <h1 class="title">${currentList?.name}</h1>
                 <div class="card-container">
                   <div class="card done-card">
-                    <div class="card-face card-front">🎉 完了！</div>
+                    <div class="card-face card-front" style="justify-content:center; align-items:center; text-align:center;">🎉 完了！</div>
                   </div>
                 </div>
                 <div class="counters">
@@ -1011,8 +1023,10 @@
 
           const word = words[idx];
           const mapping = currentList.columnMapping;
-          const frontText = word.columns[mapping.front - 1] || '(データなし)';
-          const backText = word.columns[mapping.back - 1] || '(データなし)';
+          const rawFrontText = word.columns[mapping.front - 1] || '(データなし)';
+          const rawBackText = word.columns[mapping.back - 1] || '(データなし)';
+          const frontText = highlightParentheses(rawFrontText);
+          const backText = highlightParentheses(rawBackText);
           const cardNumberText = getCardNumberString(word, mapping);
           
           const imageColumnIndex = (mapping.image || 0) - 1;
@@ -1035,32 +1049,35 @@
 
           app.innerHTML = `
             <div class="container flashcard-page">
-              <h1 class="title">${currentList?.name}</h1>
-              ${imageAreaHtml}
-              <div class="card-number">${cardNumberText}</div>
-              <div class="card-container" id="cardContainer">
-                <div class="card${isFlipped ? " is-flipped" : ""}">
-                  <div class="card-face card-front">${frontText}</div>
-                  <div class="card-face card-back">${backText}</div>
+                <h1 class="title">${currentList?.name}</h1>
+
+                ${imageAreaHtml}
+                
+                <div class="card-number">${cardNumberText}</div>
+                <div class="card-container" id="cardContainer">
+                    <div class="card${isFlipped ? " is-flipped" : ""}">
+                        <div class="card-face card-front">${frontText}</div>
+                        <div class="card-face card-back">${backText}</div>
+                    </div>
                 </div>
-              </div>
-              <div class="counters">
-                <span>のこり: ${words.length - idx}</span>
-                <span>カンペキ: ${checked.length}</span>
-                <span>もう一回: ${unchecked.length}</span>
-              </div>
-              <div class="btn-row">
-                <button id="againBtn" class="again-btn">🤔 もう一回！</button>
-                <button id="perfectBtn" class="perfect-btn">👍 カンペキ！</button>
-              </div>
-              <div class="sub-btn-row">
-                <button id="suspendBtn" class="sub-btn">中断</button>
-                <button id="resetBtn" class="sub-btn">リセット</button>
-                <button id="reviewBtn" class="sub-btn">「もう一回！」を復習</button>
-              </div>
-              <div class="mt-8">
-                <button id="backBtn" class="back-link">« リスト選択にもどる (保存されません)</button>
-              </div>
+                <div class="counters">
+                    <span>のこり: ${words.length - idx}</span>
+                    <span>カンペキ: ${checked.length}</span>
+                    <span>もう一回: ${unchecked.length}</span>
+                </div>
+                <div class="btn-row">
+                    <button id="againBtn" class="again-btn">🤔 もう一回！</button>
+                    <button id="perfectBtn" class="perfect-btn">👍 カンペキ！</button>
+                </div>
+                <div class="sub-btn-row">
+                    <button id="suspendBtn" class="sub-btn">中断</button>
+                    <button id="resetBtn" class="sub-btn">リセット</button>
+                    <button id="reviewBtn" class="sub-btn">「もう一回！」を復習</button>
+                </div>
+
+                <div class="mt-8">
+                    <button id="backBtn" class="back-link">« リスト選択にもどる (保存されません)</button>
+                </div>
             </div>
           `;
           
@@ -1120,10 +1137,6 @@
           if(imageModal) {
               imageModal.onclick = () => {
                   imageModal.style.display = 'none';
-                  const cardContainer = document.getElementById('cardContainer');
-                  if (cardContainer) {
-                      cardContainer.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                  }
               };
           }
 
